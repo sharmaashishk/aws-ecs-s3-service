@@ -1,0 +1,7 @@
+server:
+  port: 8095
+
+amazonProperties:
+  endpointUrl: https://s3-demo-bucket-cs.s3.ap-south-1.amazonaws.com/
+  bucketName: s3-demo-bucket-cs
+
