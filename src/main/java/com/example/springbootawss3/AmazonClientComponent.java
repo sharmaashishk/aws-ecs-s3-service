@@ -36,11 +36,8 @@ public class AmazonClientComponent {
     @PostConstruct
     private void initilizeAmazonService()
     {
-    //	AWSCredentials credentials = new ProfileCredentialsProvider().getCredentials();
-    	
-    	//AWSCredentials  credentials=new BasicAWSCredentials(this.accessKey,this.secretKey);
-    	this.AwsS3Client = AmazonS3ClientBuilder.defaultClient();
-;    			  
+    
+  	this.AwsS3Client = AmazonS3ClientBuilder.defaultClient();    			  
     }
     
     
