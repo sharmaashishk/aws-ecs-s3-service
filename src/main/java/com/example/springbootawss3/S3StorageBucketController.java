@@ -2,6 +2,7 @@ package com.example.springbootawss3;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
@@ -18,6 +19,12 @@ public class S3StorageBucketController {
 	private S3StorageBucketController(AmazonClientComponent amazonClient)
 	{
 		this.amazonClient=amazonClient;
+	}
+	
+	@GetMapping("/welcome")
+	public String welcomeMessage()
+	{
+		return "Hello, welcome to AWS CICP implementation screen V1";
 	}
 
 	@PostMapping("/uploadFile")
