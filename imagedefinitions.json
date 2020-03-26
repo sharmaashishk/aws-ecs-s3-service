@@ -1,0 +1,7 @@
+  
+[
+    {
+        "name": "spring-boot",
+        "imageUri": "943222227078.dkr.ecr.ap-south-1.amazonaws.com/gsirepo:gsirepo1"
+    }
+]
