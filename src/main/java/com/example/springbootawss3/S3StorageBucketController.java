@@ -24,7 +24,7 @@ public class S3StorageBucketController {
 	@GetMapping("/welcome")
 	public String welcomeMessage()
 	{
-		return "Hello, welcome to AWS CICP implementation screen V1";
+		return "Hello, welcome to AWS CICD implementation screen V2";
 	}
 
 	@PostMapping("/uploadFile")
